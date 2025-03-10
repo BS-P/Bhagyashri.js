@@ -1,0 +1,30 @@
+//Exercise problem 1//
+/*function min(a,b) {
+    return a<b?a:b;
+}
+console.log (min(8,15));
+console.log (min(1,-5));
+//another way //
+function min (c,d){
+    if (c<d){
+        return c;
+    } else{
+        return d;
+    }
+
+}
+console.log(min(5,100))*/
+
+//Exercise problem 2//
+function num(n){
+    if (n<0) n=-n; //Manually convert negative to positive (instead of Math.abs) , (external source)//
+    if (n===0) return true;
+    if (n===1) return false;
+    return num(n-2);
+}
+console.log(num(50));
+console.log(num(75));
+console.log(num(-1));
+console.log(num(-100));
+console.log(num(-17));
+
