@@ -1,5 +1,5 @@
 //Exercise problem 1 (MINIMUM) //
-/*function min(a,b) {
+function min(a,b) {
     return a<b?a:b;
 }
 console.log (min(8,15));
@@ -26,7 +26,7 @@ console.log(num(50));
 console.log(num(75));
 console.log(num(-1));
 console.log(num(-100));
-console.log(num(-17));*/
+console.log(num(-17));
 
 //Exercise problem 3 (BEAN COUNTING) //
  
