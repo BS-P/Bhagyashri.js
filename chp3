@@ -1,4 +1,4 @@
-//Exercise problem 1//
+//Exercise problem 1 (MINIMUM) //
 /*function min(a,b) {
     return a<b?a:b;
 }
@@ -13,9 +13,9 @@ function min (c,d){
     }
 
 }
-console.log(min(5,100))*/
+console.log(min(5,100))
 
-//Exercise problem 2//
+//Exercise problem 2 (RECURSION) //
 function num(n){
     if (n<0) n=-n; //Manually convert negative to positive (instead of Math.abs) , (external source)//
     if (n===0) return true;
@@ -26,5 +26,23 @@ console.log(num(50));
 console.log(num(75));
 console.log(num(-1));
 console.log(num(-100));
-console.log(num(-17));
+console.log(num(-17));*/
+
+//Exercise problem 3 (BEAN COUNTING) //
+ 
+function countChar(string, char) {
+    let count = 0;
+    for (let a = 0; a < string.length; a++) {
+      if (string[a] === char) {
+        count++;
+      }
+    }
+    return count;
+  }
+  
+  function countBs(string) {
+    return countChar(string, 'B');
+  }
+ console.log(countBs("BOB"))
+ console.log(countChar("kakkerlak","k"));
 
