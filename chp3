@@ -17,16 +17,12 @@ console.log(min(5,100))
 
 //Exercise problem 2 (RECURSION) //
 function num(n){
-    if (n<0) n=-n; //Manually convert negative to positive (instead of Math.abs) , (external source)//
     if (n===0) return true;
     if (n===1) return false;
     return num(n-2);
 }
 console.log(num(50));
 console.log(num(75));
-console.log(num(-1));
-console.log(num(-100));
-console.log(num(-17));
 
 //Exercise problem 3 (BEAN COUNTING) //
  
