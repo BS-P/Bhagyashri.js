@@ -1,0 +1,68 @@
+// Example Problem 1 (SUM OF THE RANGE) //
+
+function range(start, end, step) {
+  let result = []; 
+
+  if (step === undefined) {
+    step = 1;
+  }
+
+  if (step > 0) {
+    let i = start;
+    while (i <= end) { 
+      result.push(i);
+      i += step;
+    }
+  }
+  
+  else {
+    let i = start;
+    while (i >= end) { 
+      result.push(i);
+      i += step;
+    }
+  }
+
+  return result; 
+}
+
+
+function sum(numbers) {
+  let total = 0; 
+  for (let i = 0; i < numbers.length; i++) {
+    total += numbers[i]; 
+  }
+  return total; 
+}
+
+console.log(sum(range(1, 10))); 
+console.log(range(1, 10, 2));   
+console.log(range(5, 2, -1));   
+
+// Example Problem 2 (REVERSING AN ARRAY) //
+
+function reverseArrayInPlace(arr) {
+    let left = 0;
+    let right = arr.length - 1;
+  
+    while (left < right) {
+      
+      let temp = arr[left];
+      arr[left] = arr[right];
+      arr[right] = temp;
+  
+      left++;
+      right--;
+    }
+  }
+  
+  let arr1 = [1, 2, 3, 4, 5];
+  console.log(reverseArrayInPlace(arr1)); 
+  console.log(arr1); 
+  
+  let arr2 = [2, 4 , 6 ,8 , 10];
+  reverseArrayInPlace(arr2);
+  console.log(arr2); 
+
+//Example Problem 3 (LIST)
+
