@@ -1,0 +1,37 @@
+
+let movies = [
+    { title: "hum aapke hai kon", rating: 9.1 },
+    { title: "Interstellar", rating: 8.6 },
+    { title: "Bhaag Milkha Bhaag", rating: 7.8 },
+    { title: "The godfather", rating: 3.7 },
+    { title: "The Dark Knight", rating: 9.0 },
+    { title: "The Wild Robot" , rating: 8.2 },
+    { title: "Inside Job" , rating: 7.7 }, 
+    { title: "Wall Street" , rating: 7.3 },
+    { title: "Equity" , rating: 5.6 },
+    { title: "Kantara" , rating: 9.5 },
+    { title: "leave No Trace" , rating: 10 },
+    { title: "The Exchange" , rating: 5.7 },
+    { title: "Marvels: Endgame", rating: 8.4 }
+];
+
+
+let topMovies = movies.filter(function(movie) {
+    return movie.rating > 8 ;
+    
+});
+
+
+let formattedMovies = topMovies.map(function(movie) {
+    return movie.title + " (Rating: " + movie.rating + ")";
+    
+});
+
+
+console.log("Highly Rated Movies:");
+formattedMovies.forEach(function(movie) {
+    console.log(movie);
+});
+ 
+
+

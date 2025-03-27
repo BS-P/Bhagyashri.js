@@ -2,7 +2,7 @@
 
 function range(start, end, step) {
   let result = []; 
-
+}
   if (step === undefined) {
     step = 1;
   }
@@ -22,10 +22,6 @@ function range(start, end, step) {
       i += step;
     }
   }
-
-  return result; 
-}
-
 
 function sum(numbers) {
   let total = 0; 
