@@ -1,9 +1,9 @@
 const readline = require("readline");
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-function Scene(storytext, choices) {
-  this.storytext = storytext;
-  this.choices = choices;
+function Scene(name, playfunction) {
+  this.name = name;
+  this.play = playfunction;
 }
 
 let scenes = {};
@@ -136,4 +136,10 @@ function runScene(name) {
   scenes[name].play(runScene);
 }
 
+
+
+
+
+
 intro(runScene);
+
