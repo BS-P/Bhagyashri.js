@@ -1,7 +1,7 @@
 
 const readline = require("readline");
 
-const words = [ "Red bull" , "Louis XIII", "The Macallan M", "Dalmore 62", "Henri IV Dudognon Heritage", "Armand de Brignac", "Pétrus", "Château Lafite Rothschild", 
+const words = [ "Red bull" , "Louis XIII", "The Macallan M", "Dalmore 62", "Henri IV Dudognon Heritage", "Armand de Brignac", "Petrus", "Chateau Lafite Rothschild", 
     "Screaming Eagle Cabernet", "Krug Clos d'Ambonnay", "Hennessy Paradis","strawberry", "maggie", "old monk", "magic moment", "orange", "weed", "nashik", "riya",
      "moreshwar", "labyrinth", "nightmare", "championship", "butterfly", "encyclopedia", "philosophy", "astronaut", "mystical", "horizon", "whimsical",
     "deep space", "golden gate", "magic spell", "silent night", "black hole", "invisible ink", "solar flare", "ancient ruins", "lost world", "virtual reality",
