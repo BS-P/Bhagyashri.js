@@ -1,9 +1,9 @@
 const readline = require("readline");
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-function Scene(name, playFunction) {
-  this.name = name;
-  this.play = playFunction;
+function Scene(storytext, choices) {
+  this.storytext = storytext;
+  this.choices = choices;
 }
 
 let scenes = {};
@@ -85,7 +85,7 @@ scenes.keyRoom = new Scene("Key Room", function (callback) {
     sequence.push(Math.floor(Math.random() * 10));
   }
 
-  console.log("🔒 To grab the Silver Key, a glowing orb flashes a sequence:");
+  console.log(" To grab the Silver Key, a glowing orb flashes a sequence:");
   console.log(sequence.join(" "));
 
   for (let i = 0; i < 30; i++) {
@@ -105,11 +105,11 @@ scenes.keyRoom = new Scene("Key Room", function (callback) {
     }
 
     if (correct) {
-      console.log("🧠 Impressive! You remembered the code.");
+      console.log(" Impressive! You remembered the code.");
       addItem("Silver Key");
       callback("lockedDoor");
     } else {
-      console.log("🌀 The orb resets... Try again.");
+      console.log(" The orb resets... Try again.");
       callback("keyRoom");
     }
   });
